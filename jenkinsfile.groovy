@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                intentional errorlsadasdasf in for while eles if  if if 
                 echo 'Cloning the repository...'
                 git 'https://github.com/dantesbane/PES2UG21CS275_jenkins'
                 script {
