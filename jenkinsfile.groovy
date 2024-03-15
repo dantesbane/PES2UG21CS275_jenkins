@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Cloning the repository...'
-                git 'https://github.com/your_username/your_repository.git'
+                git 'https://github.com/dantesbane/PES2UG21CS275_jenkins'
                 script {
                     // Assuming your .cpp file is located at the root of the repository
                     sh 'g++ -o output_file_name your_cpp_file.cpp'
