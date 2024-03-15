@@ -4,8 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building the project...'
-                // Add build commands here, e.g., 'mvn clean install'
+                echo 'Cloning the repository...'
+                git 'https://github.com/your_username/your_repository.git'
+                script {
+                    // Assuming your .cpp file is located at the root of the repository
+                    sh 'g++ -o output_file_name your_cpp_file.cpp'
+                }
             }
         }
         
